@@ -23,18 +23,18 @@ const FabricJSCanvas = ({ className, onReady }: Props) => {
     const resizeCanvas = () => {
       setCurrentDimensions()
     }
-    setCurrentDimensions()
+    //setCurrentDimensions()
 
-    window.addEventListener('resize', resizeCanvas, false)
+    //window.addEventListener('resize', resizeCanvas, false)
 
     if (onReady) {
       onReady(canvas)
     }
 
-    return () => {
-      canvas.dispose()
-      window.removeEventListener('resize', resizeCanvas)
-    }
+    //return () => {
+    //  canvas.dispose()
+    //  window.removeEventListener('resize', resizeCanvas)
+    //}
   }, [])
   return (
     <div ref={canvasElParent} className={className}>
